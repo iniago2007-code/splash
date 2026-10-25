@@ -1,0 +1,267 @@
+
+/* SPLASH INFORMATION PAGE */
+
+.checkout-header {
+  background: #ffffff;
+}
+
+.checkout-header .navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.checkout-header .logo,
+.checkout-header .nav-links a,
+.checkout-header .icon-btn {
+  color: #000000;
+}
+
+.checkout-header .nav-links a.active {
+  border-bottom: 2px solid #000000;
+}
+
+.checkout-header .cart-count {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* CHECKOUT MAIN */
+
+.checkout-main {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 95px 20px 0;
+  min-height: 850px;
+}
+
+/* CHECKOUT STEPS */
+
+.checkout-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  margin-bottom: 55px;
+}
+
+.current-step {
+  font-weight: 600;
+}
+
+.step-arrow {
+  font-size: 14px;
+}
+
+/* EXPRESS CHECKOUT */
+
+.express-checkout {
+  width: 100%;
+  text-align: center;
+}
+
+.express-checkout > p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.express-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.paypal-btn,
+.paystack-btn {
+  height: 45px;
+  min-width: 165px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.paypal-btn {
+  background: #ffcc00;
+  color: #003087;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.paypal-symbol {
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.paystack-btn {
+  background: #ffffff;
+  color: #0b2239;
+  box-shadow: 0 1px 8px #00000020;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.paystack-symbol {
+  color: #00a7e8;
+  font-size: 28px;
+}
+
+/* OR DIVIDER */
+
+.checkout-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 50px;
+  font-size: 11px;
+}
+
+.checkout-divider::before,
+.checkout-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #999999;
+}
+
+/* SHIPPING FORM */
+
+.shipping-address h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#informationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#informationForm input:not([type="checkbox"]),
+#informationForm select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #888888;
+  border-radius: 0;
+  background: #ffffff;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  outline: none;
+  color: #000000;
+}
+
+#informationForm input::placeholder {
+  color: #111111;
+  opacity: 1;
+}
+
+#informationForm input:focus,
+#informationForm select:focus {
+  border-color: #000000;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* SAVE INFORMATION AND CONTINUE */
+
+.checkout-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.save-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.save-info input {
+  accent-color: #000000;
+}
+
+.continue-btn {
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 11px;
+  padding: 16px 20px;
+  white-space: nowrap;
+}
+
+.continue-btn:hover {
+  background: #333333;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .checkout-header .navbar {
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  .checkout-main {
+    padding: 55px 20px 0;
+    min-height: 760px;
+  }
+
+  .checkout-steps {
+    font-size: 13px;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .express-options {
+    gap: 10px;
+  }
+
+  .paypal-btn,
+  .paystack-btn {
+    min-width: 0;
+    width: 45%;
+    font-size: 17px;
+  }
+
+  .paypal-symbol,
+  .paystack-symbol {
+    font-size: 21px;
+  }
+
+  .checkout-divider {
+    margin-bottom: 35px;
+  }
+
+  .shipping-address h2 {
+    font-size: 16px;
+  }
+
+  .name-fields {
+    gap: 10px;
+  }
+
+  .checkout-bottom {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .save-info {
+    align-self: flex-start;
+  }
+}

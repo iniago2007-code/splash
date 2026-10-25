@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash | Shipping</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shipping.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="shipping-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">SPLASH</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </button>
+
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 2h3l3 14h13l2-10H5"></path>
+          </svg>
+          <span id="cartCount" class="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shipping-main">
+
+    <!-- CHECKOUT PROGRESS -->
+    <div class="shipping-steps">
+      <span>Information</span>
+      <span class="step-arrow">❯</span>
+      <span class="active-step">Shipping</span>
+      <span class="step-arrow">❯</span>
+      <span>Payment</span>
+    </div>
+
+    <!-- SHIPPING DETAILS -->
+    <section class="shipping-content">
+
+      <div class="shipping-field">
+        <span class="field-label">Contact</span>
+        <span id="shippingContact"></span>
+      </div>
+
+      <div class="shipping-field">
+        <span class="field-label">Ship to</span>
+        <span id="shippingDestination"></span>
+      </div>
+
+      <h2>Shipping Method</h2>
+
+      <div class="shipping-method">
+        <span>10–15 working days</span>
+        <span>$20,000</span>
+      </div>
+
+      <div class="shipping-action">
+        <button id="continuePayment" type="button">
+          Continue To Payment
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Track Your Orders</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Privacy</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shops</h3>
+          <ul>
+            <li><a href="#">Dressmeoutlet.com, Nigeria</a></li>
+            <li><a href="#">Laurus Elegance, Dubai</a></li>
+            <li><a href="#">The Brand, UK</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Splash</a>
+          <span>© splashthebrand.com</span>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Pinterest">Ⓟ</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">ⓕ</a>
+          <a href="#" aria-label="Twitter">♡</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="shipping.js"></script>
+</body>
+</html>

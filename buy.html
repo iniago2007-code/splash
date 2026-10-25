@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash | Buy Product</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="buy-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">SPLASH</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </button>
+
+        <button class="icon-btn" id="cartBtn" aria-label="Shopping cart">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 2h3l3 14h13l2-10H5"></path>
+          </svg>
+          <span id="cartCount" class="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="buy-main container">
+
+    <!-- PRODUCT IMAGE GALLERY -->
+    <section class="product-gallery">
+      <div class="main-image">
+        <img src="images/buy-main.jpg"
+             alt="Line Tee Short Dress"
+             id="mainProductImage">
+      </div>
+
+      <div class="thumbnail-gallery">
+        <button class="thumbnail" data-image="images/buy-front.jpg">
+          <img src="images/buy-front.jpg" alt="Front view">
+        </button>
+
+        <button class="thumbnail" data-image="images/buy-back.jpg">
+          <img src="images/buy-back.jpg" alt="Back view">
+        </button>
+
+        <button class="thumbnail" data-image="images/buy-full.jpg">
+          <img src="images/buy-full.jpg" alt="Full view">
+        </button>
+      </div>
+    </section>
+
+    <!-- PRODUCT INFORMATION -->
+    <section class="buy-details">
+
+      <h1>Line Tee short Dress</h1>
+
+      <p class="product-description">
+        A line dress with dropped shoulder line.
+        V_shaped neckline emphasizes the
+        beauty of the necks.
+      </p>
+
+      <div class="buy-rating">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">234</span>
+      </div>
+
+      <p class="buy-price">$7,000</p>
+
+      <!-- QUANTITY -->
+      <div class="quantity-section">
+        <p class="option-label">Quantity</p>
+
+        <div class="quantity-controls">
+          <button id="decreaseQty" aria-label="Decrease quantity">−</button>
+          <span id="quantityValue">2</span>
+          <button id="increaseQty" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+
+      <!-- COLOURS -->
+      <div class="colour-section">
+        <p class="option-label">Colours:</p>
+
+        <div class="option-buttons" id="colourOptions">
+          <button class="option-btn selected" data-colour="Brown">
+            Brown
+          </button>
+          <button class="option-btn" data-colour="Blue">
+            Blue
+          </button>
+          <button class="option-btn" data-colour="Black">
+            Black
+          </button>
+        </div>
+      </div>
+
+      <!-- SIZES -->
+      <div class="size-section">
+        <p class="option-label">Size:</p>
+
+        <div class="option-buttons" id="sizeOptions">
+          <button class="option-btn" data-size="XS">XS</button>
+          <button class="option-btn selected" data-size="S">S</button>
+          <button class="option-btn" data-size="M">M</button>
+          <button class="option-btn" data-size="L">L</button>
+          <button class="option-btn" data-size="XL">XL</button>
+        </div>
+      </div>
+
+      <!-- PAY BUTTON -->
+      <div class="payment-action">
+        <button id="payBtn" class="pay-btn">Pay</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Track Your Orders</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Privacy</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shops</h3>
+          <ul>
+            <li><a href="#">Dressmeoutlet.com, Nigeria</a></li>
+            <li><a href="#">Laurus Elegance, Dubai</a></li>
+            <li><a href="#">The Brand, UK</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Splash</a>
+          <span>© splashthebrand.com</span>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Pinterest">Ⓟ</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">ⓕ</a>
+          <a href="#" aria-label="Twitter">♡</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="buy.js"></script>
+</body>
+</html>

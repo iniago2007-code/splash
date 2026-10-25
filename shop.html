@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash | Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="shop-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">SPLASH</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <button class="icon-btn" id="searchBtn"
+                aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </button>
+
+        <button class="icon-btn" id="cartBtn"
+                aria-label="Shopping cart">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 2h3l3 14h13l2-10H5"></path>
+          </svg>
+          <span id="cartCount" class="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shop-main container">
+    <h1 class="shop-title">Shop</h1>
+
+    <section class="shop-grid">
+
+      <!-- PRODUCT 1 -->
+      <article class="product-card">
+        <img src="image/101.jpg"
+             alt="Fur Tote Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Fur Tote Dress</h3>
+          <span class="price">$30,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(234)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="101">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="101">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 2 -->
+      <article class="product-card">
+        <img src="image/102.jpg"
+             alt="Fur Tote Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Fur Tote Dress</h3>
+          <span class="price">$40,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(236)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="102">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="102">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 3 -->
+      <article class="product-card">
+        <img src="image/103.jpg"
+             alt="Strapless Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Strapless Dress</h3>
+          <span class="price">$10,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(23)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="103">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="103">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 4 -->
+      <article class="product-card">
+        <img src="image/104.png"
+             alt="Line Tie Short Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Line Tie Short Dress</h3>
+          <span class="price">$7,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(23)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="104">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="104">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 5 -->
+      <article class="product-card">
+        <img src="image/105.jpg"
+             alt="Strapless Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Strapless Dress</h3>
+          <span class="price">$20,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(31)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="105">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="105">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 6 -->
+      <article class="product-card">
+        <img src="image/106.jpg"
+             alt="Tess Ball Gown"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Tess Ball Gown</h3>
+          <span class="price">$12,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(231)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="106">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="106">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 7 -->
+      <article class="product-card">
+        <img src="image/107.jpg"
+             alt="Strapless Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Strapless Dress</h3>
+          <span class="price">$7,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(90)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="107">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="107">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCT 8 -->
+      <article class="product-card">
+        <img src="image/108.jpg"
+             alt="Dim Floral Dress"
+             class="product-image">
+
+        <div class="product-info">
+          <h3>Dim Floral Dress</h3>
+          <span class="price">$19,000</span>
+        </div>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(208)</span>
+        </div>
+
+        <div class="product-actions">
+          <button class="buy-btn" data-product="108">
+            Buy Now
+          </button>
+          <button class="cart-btn" data-product="108">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Track Your Orders</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Privacy</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shops</h3>
+          <ul>
+            <li><a href="#">Desamonte.com, Nigeria</a></li>
+            <li><a href="#">Laxus Elegance, Dubai</a></li>
+            <li><a href="#">The Brand, UK</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Splash</a>
+          <span>© splashfashion.com</span>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Pinterest">Ⓟ</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">ⓕ</a>
+          <a href="#" aria-label="Twitter">♡</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+/* SPLASH SHIPPING PAGE */
+
+.shipping-header {
+  background: #ffffff;
+}
+
+.shipping-header .navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.shipping-header .logo,
+.shipping-header .nav-links a,
+.shipping-header .icon-btn {
+  color: #000000;
+}
+
+.shipping-header .nav-links a.active {
+  border-bottom: 2px solid #000000;
+}
+
+/* MAIN */
+
+.shipping-main {
+  max-width: 650px;
+  min-height: 570px;
+  margin: 0 auto;
+  padding: 90px 20px 80px;
+}
+
+/* CHECKOUT STEPS */
+
+.shipping-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 16px;
+  margin-bottom: 65px;
+}
+
+.shipping-steps .active-step {
+  font-weight: 700;
+}
+
+.step-arrow {
+  font-size: 13px;
+}
+
+/* SHIPPING CONTENT */
+
+.shipping-content {
+  width: 100%;
+}
+
+.shipping-field {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid #888888;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 12px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.field-label {
+  flex-shrink: 0;
+}
+
+.shipping-field span:last-child {
+  overflow-wrap: anywhere;
+}
+
+.shipping-content h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+
+/* SHIPPING METHOD */
+
+.shipping-method {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid #888888;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+/* CONTINUE BUTTON */
+
+.shipping-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.shipping-action button {
+  padding: 15px 20px;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.shipping-action button:hover {
+  background: #333333;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .shipping-main {
+    padding: 55px 20px 65px;
+    min-height: 500px;
+  }
+
+  .shipping-steps {
+    gap: 8px;
+    font-size: 13px;
+    margin-bottom: 45px;
+  }
+
+  .shipping-field {
+    font-size: 11px;
+  }
+
+  .shipping-content h2 {
+    font-size: 15px;
+  }
+}
